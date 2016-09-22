@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules
+/vendor
+bower_components
+
+# Compiled directories
+/bin
+/build
+
+# Log files
+*.log
+
+.project
+.DS_Store

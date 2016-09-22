@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html ng-app="hiretyrone" ng-controller="AppController">
+    <head>
+        <title ng-bind="pageTitle"></title>
+        
+        <!-- social media tags -->
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:site" content="">
+        <meta name="twitter:title" content="">
+        <meta name="twitter:description" content="">
+        <meta name="twitter:creator" content="">
+        <meta name="twitter:image:src" content="">
+        <meta property="og:title" content="hiretyrone" />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="" />
+        <meta property="og:image" content="" />
+        <meta property="og:description" content="">
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- compiled CSS -->
+        {% for file in styles %}
+        <link rel="stylesheet" type="text/css" href="{{ file }}" />
+        {% endfor %}
+        
+        <!-- compiled JavaScript -->
+        {% for script in scripts %}
+        <script type="text/javascript" src="{{ script }}"></script>
+        {% endfor %}
+        
+    </head>
+    <body>
+        <div class="off-canvas-wrapper">
+            <div class="off-canvas-wrapper-inner">                
+                <!-- Off Canvas Menu -->
+                <div class="off-canvas position-right" ui-view="off_canvas_right"></div>
+                <!-- End Off Canvas Menu --> 
+                
+                <!-- Off Canvas Content -->
+                <div class="off-canvas-content">
+                    
+                    <!-- Header and Nav -->
+                    <header ui-view="header"></header>
+                    <!-- End Header and Nav -->
+                    
+                    <!-- Main Content -->
+                    <div class="" ui-view="main"></div>
+                    <!-- End Main Content --> 
+                    
+                    <!-- Footer -->
+                    <footer class="main-footer" ui-view="footer"></footer>
+                    <!-- End Footer --> 
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

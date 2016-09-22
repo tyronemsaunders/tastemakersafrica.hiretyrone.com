@@ -1,0 +1,79 @@
+.section-header {
+  background-color: $black;
+  color: $white;
+  padding: 1rem 4rem;
+  h3 {
+   font-family: 'Raleway', sans-serif;
+   font-weight: 700;
+   text-align: center;
+   color: $white; 
+   letter-spacing: 2px;
+  }
+  padding: 1rem 4rem;
+}
+
+.section-description, .section-evidence {
+  padding: 2rem 4rem;
+  blockquote {
+    font-family: 'Raleway', sans-serif;
+    font-style: italic;
+  }
+  small {
+    color: $dark-gray;
+  }
+  p {
+    font-family: 'Open Sans', sans-serif;
+    color: $black;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    a {
+      text-decoration: underline;
+    }
+    a:link {
+    color: $black;
+    }
+    a:visited {
+      color: $black;
+    }
+    a:hover {
+      color: darken($black, 85%);
+    }
+    a:active {
+      color: darken($black, 85%);
+    }
+  }
+  h4, h5 {
+    font-family: 'Raleway', san-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+    a:link {
+    color: $black;
+    }
+    a:visited {
+      color: $black;
+    }
+    a:hover {
+      color: darken($black, 85%);
+    }
+    a:active {
+      color: darken($black, 85%);
+    }
+  }
+  h4 {
+    text-transform: uppercase;
+  }
+  h5 {
+    border-bottom: 1px solid $light-gray;
+  }
+  .tool-logo {
+    display: inline-block;
+    height: 32px;
+    width: auto;
+    margin: .5rem;
+  }
+  img.responsive-img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+}

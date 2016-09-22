@@ -1,0 +1,29 @@
+{
+  "name": "ngsass-foundation",
+  "description": "A boilerplate for building AngularJS apps using Foundation 6 and Sass",
+  "main": "app.js",
+  "authors": [
+    "Tyrone Saunders"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "^1.5.8",
+    "angular-foundation-6": "^0.10.10",
+    "foundation-sites": "^6.2.3",
+    "angular-ui-router": "^0.3.1",
+    "angular-animate": "^1.5.8",
+    "angular-mocks": "^1.5.8",
+    "angular-placeholders": "*",
+    "font-awesome": "fontawesome#^4.6.3",
+    "motion-ui": "^1.2.2"
+  }
+}

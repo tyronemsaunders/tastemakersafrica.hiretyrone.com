@@ -1,0 +1,70 @@
+<header class="section-header small-12 medium-12 large-12 column">
+	<h3>
+		<img src="https://s3.amazonaws.com/hiretyrone/tastemakers-hiretyrone30pxwht.png" alt="tastemakers africa x hiretyrone.com"> 
+		on COLLABORATION
+	</h3>
+</header>
+<div class="row section-content">
+	<div class="section-description small-12 medium-12 columns">
+		<p>
+			How does the saying go?
+		</p>
+			<blockquote>"If you want to go fast, go alone. If you want to go far, go together."</blockquote>
+		<p>
+			It's going to be important have a workflow for Tastemakers Africa's engineering/software team that supports scalability, growth, and collaboration.
+			The same tools I used to build this site, <a href="http://www.vagrantup.com" target="_blank">Vagrant</a>, <a href="http://www.chef.io" target="_blank">Chef</a>, and <a href="http://www.github.com" target="_blank">Github</a> are excellent for team collaboration.
+		</p>
+		<p>
+			I'll bring to Tastemakers Africa a workflow, using those tools and others, that will address the common challenges of building products across distributed teams like tedious environment setup, discrepancies between development and production environments, and clashes in code written by different developers.  
+		</p>
+	</div>
+	<div class="section-evidence small-12 medium-12 columns">
+		<div class="row">
+			<h4 class="text-center small-12 medium-12 columns">The Teamwork Formula</h4>
+		</div>
+		<div class="row">
+			<h5 class="text-center small-12 medium-12 columns"><a href="http://www.vagrantup.com" target="_blank"><img class="tool-logo" src="https://s3.amazonaws.com/hiretyrone/Vagrant.png" alt="vagrantup logo"> Vagrant</a></h5>
+			<code class="small-12 medium-12 columns">$ vagrant up</code>
+			<p class="small-12 medium-12 columns">It's that simple. Typing those two words into the command line will give every developer on the team the same setup to develop on.</p>
+			<p class="small-12 medium-12 columns">
+				<strong>Why is that important? </strong> 
+				There is a strong possibility if everyone is not working on the same setup that code may work on someone's laptop but not on a live server.  Troubleshooting problems like that can cost time and money.
+			</p>
+		</div>
+		<div class="row">
+			<h5 class="text-center small-12 medium-12 columns"><a href="http://www.chef.io" target="_blank"><img class="tool-logo" src="https://s3.amazonaws.com/hiretyrone/Chef_IO_Regular.png" alt="chef.io logo"> Chef</a></h5>
+			<p class="small-12 medium-12 columns">
+				Chef works hand-in-hand with Vagrant to automate installation of software on servers.
+				I wrote Chef "cookbooks" for this site that automatically install nginx, nodejs, and other supporting software and configurations.
+			</p>
+			<p class="small-12 medium-12 columns">
+				<strong>Why is that important? </strong> 
+				In order to grow Tastemakers Africa is going to need an infrastructure that goes beyond a routine setup that is useful for something like WordPress.  
+				Again a time and money argument can be made for a team automating with Chef.  Time is better spent developing applications for customers than setting up operating systems.
+			</p>
+		</div>
+		<div class="row">
+			<h5 class="text-center small-12 medium-12 columns"><a href="https://github.com/" target="_blank"><img class="tool-logo" src="https://s3.amazonaws.com/hiretyrone/GitHub-Mark-32px.png" alt="github logo"> Git</a></h5>
+			<p class="small-12 medium-12 columns">
+				Collaboration on code, while it can be powerful if done right it can get messy.
+				Git and Github are tools that can help work across teams and avoid conflicts.   	
+			</p>
+			<p class="small-12 medium-12 columns">
+				<strong>Why is that important? </strong> 
+				Those conflicts can again cost time and money and Git keeps track of your changes in several locations; we've all lost a flash drive.
+			</p>
+			<code class="small-12 medium-12 columns">
+				<small>#branch off of the "develop" branch to create a new feature</small><br/>
+				$ git checkout -b newfeature develop<br/>
+				<small>#write code for the new feature on a different branch locally (remember Vagrant and Chef)</small><br/>
+				<small>#switch to the development branch</small><br/>
+				$ git checkout develop<br/>
+				<small>#merge your new feature into the development branch</small><br/>
+				$ git merge --no-ff newfeature
+			</code>
+			<p class="small-12 medium-12 columns">
+				Using this method to code on a team keeps track of all the changes made to the code and "quarantines" experimentation to create new features.   	
+			</p>
+		</div>
+	</div> 
+</div>

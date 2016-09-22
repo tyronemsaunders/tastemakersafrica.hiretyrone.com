@@ -1,0 +1,112 @@
+{
+  "dest" : {
+    "build" : {
+      "js" : {
+        "site" : "build/app/site",
+        "vendor" : "build/app/vendor"
+      },
+      "css" : {
+        "core" : "build/assets/css",
+        "site" : "build/assets/css/site",
+        "vendor" : "build/assets/css/vendor"
+      },
+      "media" : "build/assets/media",
+      "fonts" : "build/assets/fonts"
+    },
+    "prod" : {
+      "js" : "bin/app",
+      "css" : "bin/assets/css",
+      "media" : "bin/assets/media",
+      "fonts" : "bin/assets/fonts"
+    },
+    "src" : {
+      "js" : {
+        "site" : "src/app",
+        "vendor" : "src/vendor"
+      },
+      "styles" : {
+        "site" : "src/assets/styles/site",
+        "vendor" : "src/assets/styles/vendor"
+      },
+      "media" : "src/assets/media",
+      "fonts" : "src/assets/fonts"
+    }
+  },
+  "src" : {
+    "app" : {
+      "js" : {
+        "site" : [
+          "src/app/**/!(*spec).js"
+        ],
+        "vendor" : [
+          "src/vendor/**/*.js", 
+          "src/vendor/*.js" 
+        ]
+      },
+      "templates" : [
+        "src/app/**/*.tpl.html",
+        "src/app/*.tpl.html"
+      ],
+      "styles" : {
+        "vendor" : [
+            "src/assets/styles/vendor/**/*.scss", 
+            "src/assets/styles/vendor/**/*.css",
+            "!src/assets/styles/vendor/partials/**"
+        ],
+        "vendorPartials" :[
+            "src/assets/styles/vendor/partials/**",
+            "!src/assets/styles/vendor/partials/*.scss",
+            "!src/assets/styles/vendor/partials/**/*.scss"
+        ],
+        "site" : [ 
+            "src/assets/styles/site/**/*.scss",
+            "src/assets/styles/site/*.scss",
+            "src/assets/styles/site/**/*.css",
+            "src/assets/styles/site/*.css",
+            "src/app/**/*.scss", 
+            "src/app/*.scss",
+            "src/app/**/*.css", 
+            "src/app/*.css"
+        ]
+      },
+      "assets" : {
+        "media" : [
+          "src/assets/media/*.*",
+          "src/assets/media/**/*.*"  
+        ],
+        "fonts" : [
+          "src/assets/fonts/*.*(eot|svg|ttf|woff|woff2)",
+          "src/assets/fonts/**/*.*(eot|svg|ttf|woff|woff2)"
+        ]
+      }
+    },
+    "vendor" : {
+      "js" : [
+        "vendor/angular/angular.js",
+        "vendor/angular-animate/angular-animate.js",
+        "vendor/angular-foundation-6/dist/angular-foundation.js",
+        "vendor/angular-ui-router/release/angular-ui-router.js",
+        "vendor/what-input/what-input.js"
+      ],
+      "templates" : [
+        
+      ],
+      "styles" : [
+        "src/assets/styles/vendor/foundation-flex-hack.scss",
+        "vendor/font-awesome/scss/font-awesome.scss"
+      ],
+      "stylePartials" : [
+        "vendor/font-awesome/scss/*.scss",
+        "!vendor/font-awesome/scss/font-awesome.scss",
+        "vendor/foundation-sites/scss/*.scss",
+        "vendor/foundation-sites/scss/**/*.scss"
+      ],
+      "assets" : {
+        "images" : [],
+        "fonts" : [
+          "vendor/font-awesome/fonts/**"
+        ]
+      }
+    }
+  }
+}

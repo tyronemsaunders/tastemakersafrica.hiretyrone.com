@@ -1,0 +1,29 @@
+.navigation-text {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .90rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: $black;
+  a:link {
+    color: $black;
+  }
+  a:visited {
+    color: $black;
+  }
+  a:hover {
+    color: darken($black, 85%);
+  }
+  a:active {
+    color: darken($black, 85%);
+  }
+}
+
+.aspect-ratio-169 {
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  position: relative;
+}
+.aspect-ratio-169 > div {
+  position: absolute;
+  top: 0; bottom: 0; left: 0; right: 0;
+}
