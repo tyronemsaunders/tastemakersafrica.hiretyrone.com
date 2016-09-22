@@ -24,7 +24,7 @@ function homeConfig(helperProvider, $stateProvider) {
 		      },
 		      "hero@app.home" : {
 		    	  templateUrl : function($stateParams) {
-		    		  var isMobile = helperProvider.isMobile;;
+		    		  var isMobile = helperProvider.isMobile;
 		    		  if (isMobile.any) {
 		    			  return 'home/hero/mobile.tpl.html'
 		    		  } else {

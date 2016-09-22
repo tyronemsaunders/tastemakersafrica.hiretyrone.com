@@ -1,7 +1,6 @@
 .hero-background {
   
 }
-
 .hero-foreground {
   background-color: rgba(0,0,0, 0.6);
   margin-right: 0 !important;
@@ -14,6 +13,11 @@
 .hero-video, .hero-gif {
   width: 100%;
   height: 100%;
+}
+
+.hero-gif {
+  position: relative;
+  right: .65rem;
 }
 
 .welcome-message {
@@ -29,6 +33,14 @@
     @media screen and (min-width: 40em) {
       @extend .text-justify !optional;
     }
+    /* Medium only */
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      
+    }
+    /* Small only */
+    @media screen and (max-width: 39.9375em) {
+      font-size: 2.75rem
+    }
   }
   h2 {
     font-family: 'Raleway', sans-serif;
@@ -40,6 +52,14 @@
     /* Medium and up */
     @media screen and (min-width: 40em) {
       @extend .text-justify !optional;
+    }
+    /* Medium only */
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+    }
+    /* Small only */
+    @media screen and (max-width: 39.9375em) {
+      font-size: 2.25rem
     }
   }
   p {

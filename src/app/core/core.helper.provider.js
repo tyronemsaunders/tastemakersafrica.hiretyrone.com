@@ -15,8 +15,13 @@ function helper() {
 		"BlackBerry" : navigator.userAgent.match(/BlackBerry/i),
 		"iOS" : navigator.userAgent.match(/iPhone|iPad|iPod/i),
 		"Opera" : navigator.userAgent.match(/Opera Mini/i),
-		"Windows" : navigator.userAgent.match(/IEMobile/i),
-		"any" : (self.Android || self.BlackBerry || self.iOS || self.Opera || self.Windows) ? true : false
+		"Windows" : navigator.userAgent.match(/IEMobile/i)
+	}
+	
+	if ((this.isMobile.Android !== null) || (this.isMobile.BlackBerry !== null) || (this.isMobile.iOS !== null) || (this.isMobile.Opera !== null) || (this.isMobile.Windows !== null)) {
+		this.isMobile.any = true;
+	} else {
+		this.isMobile.any = false;
 	}
 	
 	this.$get = function() {
